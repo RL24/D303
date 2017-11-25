@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Tuck Box</string>
+    <string name="loading">Loading…</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_google">Sign In with Google</string>
+    <string name="sign_in_or_sign_up">Or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_order_name">Order Name</string>
+    <string name="hint_credit_card">Number</string>
+    <string name="hint_credit_card_cvv">CVV</string>
+    <string name="hint_credit_card_expiry_month">Month</string>
+    <string name="hint_credit_card_expiry_year">Year</string>
+    <string name="hint_address_street">Street Address</string>
+    <string name="hint_address_region">Region</string>
+    <string name="hint_delivery_time">Delivery Time</string>
+
+    <string name="credit_card_accept">We accept</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="review_orders">Review Orders</string>
+
+    <string name="forgot_password_info">Enter your registered Email to be sent password reset instructions</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_message">Please check your Email for instructions on how to reset your password</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="ok">OK</string>
+    <string name="sign_up_message">Thank you for registering. Please check your Email to confirm your registration</string>
+
+    <string name="order_history">Order History</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="add_order">Add Order</string>
+    <string name="payment">Payment</string>
+
+    <string name="invalid_user">Please enter a username</string>
+    <string name="invalid_email">Please enter a valid Email address</string>
+    <string name="invalid_pass">Please enter a password at least 6 characters long</string>
+    <string name="login_failed_firebase">Failed to authenticate your Email and password, please try again</string>
+    <string name="login_failed_google">Failed to authenticate your Google account, please try again</string>
+
+    <string name="register_failed_firebase">Failed to register your Email and password, please try again</string>
+    <string name="register_success_firebase">Successfully registered your Email and password, please log in</string>
+
+    <string name="credit_card_failed_number">The credit card you entered is incorrect, please try again</string>
+    <string name="credit_card_failed_expiry">The expiry date for your credit card is before today, please try again</string>
+    <string name="credit_card_failed_cvv">The credit card CVV must be 3 numbers</string>
+
+    <string name="order_failed_no_meals">You must have at least one meal added to your order</string>
+    <string name="order_failed_no_orders">You must have at least one order</string>
+
+    <string name="address_failed_street">You must select a valid address</string>
+    <string name="address_failed_region">You must select a region</string>
+    <string name="address_failed_validation">The address you specified is not found, please try again</string>
+
+    <string name="review_delivery_details">Please confirm that the following is correct for delivery</string>
+    <string name="review_title_payment">Payment</string>
+    <string name="review_title_card">Card</string>
+    <string name="review_title_card_cvv">Card CVV</string>
+    <string name="review_title_card_expiry">Card Expiry</string>
+    <string name="review_title_address">Address</string>
+    <string name="review_title_date_time">Delivery Date and Time</string>
+
+    <string name="delivery_after_10">Sorry, orders after 10am cannot be ordered in the same day, please select a desired date to deliver</string>
+    <string name="delivery_today">Today</string>
+
+    <string name="default_timezone">NZ</string>
+    <string name="default_country_area">Manawatu</string>
+    <string name="default_country">New Zealand</string>
+    <string name="default_order_name">New Order</string>
+    <string name="default_credit_card_mask">[0000]{-}[0000]{-}[0000]{-}[0000]</string>
+
+    <string name="meal_options_option">Options</string>
+
+    <string name="progress_authenticating">Authenticating…</string>
+    <string name="progress_registering">Registering Account…</string>
+
+    <string name="title_delivery">Payment and Delivery</string>
+    <string name="title_order_history">Order History</string>
+    <string name="title_meal_select">Select a Meal</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_review_orders">Review Orders</string>
+
+    <string name="history_reorder_message">Would you like to re-order this order?</string>
+    <string name="history_invalid_address_time">Sorry, there was an issue restoring the delivery address and time from this order</string>
+    <string name="history_select_address">Delivery Address</string>
+    <string name="history_select_time">Delivery Time</string>
+
+    <string name="order_success_message">Thank you for ordering with Tuck Box. Your order will be processed shortly. Payment will be required on delivery</string>
+
+    <string name="firebase_message_topic">cutoff</string>
+
+    <string name="prompt_save_orders_locally">It seems you\'re offline. Please make sure you\'re online before confirming any orders</string>
+    <string name="warn_logout">Your unprocessed orders will not be saved, are you sure you wish to log out?</string>
+
+    <string-array name="default_region_select">
+        <item>Palmerston North</item>
+        <item>Feilding</item>
+        <item>Ashhurst</item>
+        <item>Longburn</item>
+    </string-array>
+
+    <string-array name="default_delivery_times">
+        <item>11:45am - 12:15pm</item>
+        <item>12:15pm - 12:45pm</item>
+        <item>12:45pm - 1:15pm</item>
+        <item>1:15pm - 1:45pm</item>
+    </string-array>
+
+</resources>

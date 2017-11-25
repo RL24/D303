@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ucol.a1599116.tuckbox">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="VERSION" android:value="1" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD7wW-Bug_XfT5xCmXRsyFpjxCYMpJwxOI" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent" />
+
+        <service android:name=".util.FCMHelper">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:parentActivityName=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgottenPasswordActivity"
+            android:parentActivityName=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomizeOrderActivity"
+            android:parentActivityName=".activity.OrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MealsActivity"
+            android:parentActivityName=".activity.CustomizeOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeliveryActivity"
+            android:parentActivityName=".activity.OrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReviewOrdersActivity"
+            android:parentActivityName=".activity.DeliveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:parentActivityName=".activity.OrdersActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
